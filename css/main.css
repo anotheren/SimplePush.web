@@ -1,0 +1,1185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #2f3037;
+}
+
+a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.l-container {
+  margin: -1px auto 0;
+  width: 100%;
+  max-width: 1440px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.l-container > * {
+  padding: 68px;
+}
+
+.download-button, .buy-button {
+  cursor: pointer;
+  border-radius: 6px;
+  height: 56px;
+  line-height: 56px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 52px;
+  padding-right: 32px;
+  background: #34a86a url('../img/icon-download.png') 10px 8px no-repeat;
+  background-size: 40px 39px;
+  box-shadow: 0px 2px 8px 0px rgba(7,113,57,0.2);
+  transition: all 0.2s;
+}
+
+.download-button:hover,
+.buy-button:hover {
+  box-shadow: 0px 2px 8px 0px rgba(7,113,57,0.4);
+  opacity: 1;
+}
+
+.download-button:active,
+.buy-button:active {
+  background-color: #439f6e;
+  transform: translateY(2px);
+}
+
+.download-button--small {
+  height: 46px;
+  line-height: 46px;
+  padding-left: 52px;
+  padding-right: 32px;
+  font-size: 18px;
+  background-image: url('../img/icon-download.png');
+  background-size: 35px 34px;
+}
+
+.buy-button {
+  background-image:
+    url('../img/icon-buy.png'),
+    linear-gradient(to bottom, rgba(233,233,233,1) 0%, rgba(218,218,218,1) 100%);
+  background-size: 38px 40px, 100% 100%;
+  background-position: 10px 8px, 0, 0;
+  box-shadow: 0px 2px 8px 0px rgba(100,100,100,0.2);
+  color: #7f8089;
+}
+
+.buy-button:hover {
+  box-shadow: 0px 2px 8px 0px rgba(100,100,100,0.4);
+}
+
+.buy-button__price {
+  border-left: 1px solid #d0d0d0;
+  padding-left: 10px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+
+/******************************
+ * Header
+ ******************************/
+.navigation {
+  padding: 50px;
+  color: #7f8089;
+}
+
+.navigation nav {
+  float: right;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2f3037;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 42px;
+}
+
+.nav-link.is-active {
+  color: #9798a1;
+}
+
+.nav-link.is-active:hover {
+  opacity: 1;
+}
+
+.logo {
+  width: 243px;
+  height: 56px;
+}
+
+/******************************
+ * Preview
+ ******************************/
+.preview {
+  margin-top: 128px;
+  background: transparent url('../img/bg-curve.png') center bottom no-repeat;
+  background-size: 1440px 271px;
+  min-height: 271px;
+  padding: 0;
+}
+
+.slogan {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.preview img {
+  display: block;
+  margin: 40px auto 0;
+  width: 1135px;
+  height: 536px;
+}
+
+/******************************
+ * Introduction
+ ******************************/
+
+.introduction {
+  position: relative;
+  margin-top: 68px;
+  background: transparent url('../img/introduction-bottom-line.png') center bottom no-repeat;
+  background-size: 1440px 76px;
+  padding: 0 0 72px;
+}
+
+.introduction h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.introduction .content {
+  width: 570px;
+  margin-left: 68px;
+}
+
+
+.introduction p {
+  color: #7f8089;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.introduction p:last-of-type {
+  margin-bottom: 28px;
+}
+
+.introduction p strong {
+  font-weight: 600;
+  color: #646672;
+}
+
+.introduction .download-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.introduction img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 612px;
+  height: 376px;
+  margin-right: 68px;
+}
+
+/******************************
+ * Features
+ ******************************/
+.features {
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: -50px;
+}
+
+.feature {
+  float: left;
+  width: 30%;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  margin-left: 5%;
+  margin-bottom: 60px;
+}
+
+.features li:nth-child(3n + 1) {
+  margin-left: 0;
+  clear: left;
+}
+
+.feature .note {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.feature .note a {
+  color: #2f3037;
+}
+
+
+.feature-performance {
+  background-image: url('../img/icon-performance.png');
+}
+
+.feature-rule {
+  background-image: url('../img/icon-rule.png');
+}
+
+.feature-ios {
+  background-image: url('../img/icon-ios.png');
+  background-size: 25px 38px;
+}
+
+.feature-decrypt {
+  background-image: url('../img/icon-decrypt.png');
+  background-size: 27px 40px;
+}
+
+.feature-dns {
+  background-image: url('../img/icon-dns.png');
+  background-size: 32px 31px;
+}
+
+.feature-group {
+  background-image: url('../img/icon-group.png');
+  background-size: 31px 31px;
+}
+
+.features h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 10px;
+}
+
+.features p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7f8089;
+}
+
+/******************************
+ * Saying
+ ******************************/
+.saying {
+  background: #37404f;
+  color: #fff;
+}
+
+.mac-icon {
+  background: transparent url('../img/surge-mac-icon.png') center center no-repeat;
+  background-size: 128px 128px;
+  width: 128px;
+  height: 128px;
+  margin: -132px auto 50px;
+}
+
+.mac-icon:hover {
+  transform: rotate(360deg);
+  transition: all 60s;
+}
+
+.saying h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+.remarks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: -80px;
+}
+
+.remark {
+  position: relative;
+  padding-left: 72px;
+  width: 28%;
+  float: left;
+  margin-left: 8%;
+  margin-bottom: 80px;
+}
+
+.remark:nth-child(3n + 1) {
+  margin-left: 0;
+  clear: left;
+}
+
+.remark img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 99px;
+  width: 60px;
+  height: 60px;
+}
+
+.remark p {
+  margin: 0 0 10px;
+}
+
+.remark .content {
+  color: #97a0b0;
+}
+
+/******************************
+ * Tweet
+ ******************************/
+.tweet {
+  background: #2b313c;
+  color: #97a0af;
+  font-size: 20px;
+  text-align: center;
+  line-height: 108px;
+  padding: 0;
+}
+
+.tweet a {
+  color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  display: inline-block;
+}
+
+.share-prompt {
+  display: inline-block;
+  margin-right: 4px;
+  transform: translateY(-3px);
+}
+
+/******************************
+ * Last Thing
+ ******************************/
+.last-thing {
+  position: relative;
+}
+
+.last-thing h2 {
+  font-weight: 600;
+  color: #646d7a;
+  font-size: 32px;
+}
+
+.last-thing .content {
+  width: 700px;
+  color: #828c9b;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.last-thing ul,
+.last-thing ol {
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.ios-promotion {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background: #e8f5ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 642px;
+  padding-left: 22px;
+  padding-bottom: 20px;
+  min-height: 440px;
+}
+
+.ios-promotion h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #646d7a;
+  padding-left: 90px;
+  line-height: 70px;
+  background: transparent url('../img/surge-ios-icon.png') left top no-repeat;
+  background-size: 70px 70px;
+}
+
+.promotion-content {
+  font-size: 14px;
+  color: #657e92;
+  line-height: 1.5;
+  width: 300px;
+  padding-left: 6px;
+}
+
+.app-store {
+  display: block;
+  margin-top: 40px;
+  background: transparent url('../img/btn-app-store.png') left top no-repeat;
+  background-size: 165px 56px;
+  width: 165px;
+  height: 56px;
+}
+
+.iphone-preview {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+  background: transparent url('../img/iphone-preview.png') left top no-repeat;
+  background-size: 293px 332px;
+  width: 293px;
+  height: 332px;
+}
+
+/******************************
+ * Footer
+ ******************************/
+.footer {
+  background: #f7f7f7;
+  font-size: 18px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  overflow: hidden;
+}
+
+.copyright {
+  color: #949ead;
+  float: left;
+  margin: 0;
+}
+
+.copyright img {
+  width: 24px;
+  height: 22px;
+  transform: translateY(4px);
+  margin: 0 4px;
+}
+
+.footer nav {
+  margin-top: 4px;
+  float: right;
+}
+
+.footer nav a {
+  float: left;
+  color: #646d7a;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-right: 1px solid #c5cad1;
+  margin-right: 28px;
+  padding-right: 28px;
+}
+
+.footer nav a:last-of-type {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.footer nav .twitter {
+  transform: translateY(1px);
+  display: block;
+  background: transparent url('../img/icon-twitter.png') left top no-repeat;
+  background-size: 22px 18px;
+  width: 22px;
+  height: 18px;
+}
+
+/******************************
+ * Buy Now
+ ******************************/
+.buy-now h2 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+}
+
+.buy-now .upgrade-hint {
+  text-align: center;
+}
+
+.buy-now .upgrade-hint a {
+  color: #7f8089;
+}
+
+.package-list a {
+  color: #2f3037;
+  display: inline-block;
+  padding: 0 0 20px;
+  width: 28%;
+  margin-right: 7%;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.package-list a:hover {
+  opacity: 1;
+  border-color: #ccc;
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.08);
+}
+
+.package-list {
+  margin-top: 60px;
+}
+
+.more-packages {
+  text-align: center;
+  margin: 40px 0 0;
+}
+
+.more-packages a {
+  color: #7f8089;
+}
+
+.package-item h3 {
+  margin: 0 0 20px;
+  line-height: 60px;
+}
+
+.package-item--single h3 {
+  background: #f1fdfb;
+}
+
+.package-item--family h3 {
+  background: #e8f5ff;
+}
+
+.package-item--mega h3 {
+  background: #fffce8;
+}
+
+.package-item:last-child {
+  margin-right: 0;
+}
+
+.package-item .price {
+  font-size: 36px;
+  color: #00b0fd;
+  margin: 20px 0 10px;
+}
+
+.package-item .number {
+  line-height: 30px;
+}
+
+.package-item .memo {
+  color: #7f8089;
+}
+
+.upgrade-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.upgrade-button {
+  cursor: pointer;
+  border-radius: 6px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: #34a86a;
+  box-shadow: 0px 2px 8px 0px rgba(7,113,57,0.2);
+  border: 0;
+  transition: all 0.2s;
+  font-size: 18px;
+  height: 46px;
+  line-height: 42px;
+}
+
+.upgrade-options {
+  display: none;
+}
+
+.upgrade-options h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.upgrade-options .title {
+  font-size: 20px;
+  color: #2f3037;
+  font-weight: 500;
+}
+
+.upgrade-options .price {
+  font-size: 20px;
+  color: #00b0fd;
+  margin-left: 20px;
+}
+
+.upgrade-options .desc {
+  color: #7f8089;
+  margin: -8px auto 30px;
+}
+
+/******************************
+ * Documentation
+ ******************************/
+.content-table {
+  float: left;
+  border: 1px solid #eee;
+  width: 260px;
+  overflow: hidden;
+  margin-right: 40px;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 15px;
+}
+
+.content-table a {
+  display: block;
+  color: #2f3037;
+  padding: 10px 20px;
+}
+
+.content-table a.is-active {
+  background: #eee;
+}
+
+.content-body {
+  overflow: hidden;
+}
+
+.content-body > :first-child {
+  margin-top: 0;
+}
+
+
+/******************************
+ * Modal
+ ******************************/
+.l-modal-container {
+  margin: 150px auto 0;
+  width: 100%;
+  max-width: 980px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+
+.modal .mac-icon {
+  margin-top: -100px;
+  background: transparent url('../img/surge-mac-icon--border.png') center center no-repeat;
+  background-size: 129px 129px;
+  width: 129px;
+  height: 129px;
+  margin: -104px auto 50px;
+}
+
+.modal h1 {
+  margin-top: -20px;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.modal form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal input {
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  width: 100%;
+}
+
+.modal .modal-wrap {
+  position: relative;
+  width: 61%;
+  margin: 50px auto 0;
+  border-top: 1px dashed #efefef;
+  border-bottom: 1px dashed #efefef;
+}
+
+.modal label span {
+  -webkit-user-select: none;
+  user-select: none;
+  color: #01b1fd;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.modal .description {
+  margin: 60px auto 20px;
+  width: 61%;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7f8089;
+}
+
+/******************************
+ * Responsive
+ ******************************/
+
+@media only screen and (max-width: 1320px) {
+  .introduction .content {
+    width: 40%;
+    margin-left: 68px;
+  }
+  .introduction img {
+    width: 40%;
+    height: auto;
+    margin-right: 0;
+  }
+  .last-thing .content {
+    width: 100%;
+  }
+  .ios-promotion {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  .iphone-preview {
+    right: 20px;
+  }
+  .promotion-content {
+    width: 100%;
+    padding-right: 380px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 50px;
+  }
+  .navigation nav {
+    float: none;
+    text-align: center;
+  }
+  header .download-button {
+    display: block;
+    margin: 40px auto 0;
+    width: 220px;
+  }
+  .preview {
+    margin-top: 80px;
+  }
+  .preview img {
+    width: 96%;
+    height: auto;
+  }
+  .introduction img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: static;
+  }
+  .introduction .content {
+    width: 100%;
+    margin: 0;
+    padding: 0 68px 0;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .introduction img {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .feature {
+    width: 45%;
+    margin-left: 5%;
+  }
+
+  .features li:nth-child(3n + 1) {
+    margin-left: 5%;
+    clear: none;
+  }
+  .features li:nth-child(2n + 1) {
+    margin-left: 0;
+    clear: left;
+  }
+
+  .remark {
+    width: 45%;
+    margin-left: 5%;
+  }
+
+  .remarks li:nth-child(3n + 1) {
+    margin-left: 5%;
+    clear: none;
+  }
+  .remarks li:nth-child(2n + 1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .navigation nav a {
+    display: block;
+    margin: 0 0 10px;
+  }
+
+  .navigation nav .download-button {
+    margin: 20px auto 0;
+  }
+  .introduction {
+    margin-top: 40px;
+  }
+  .introduction h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .slogan {
+    padding: 0 20px;
+    font-size: 28px;
+  }
+  .preview {
+    margin-top: 20px;
+  }
+  .introduction .content {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px 0;
+  }
+  .features {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .feature {
+    width: 100%;
+    background-position: center top;
+    padding-top: 50px;
+    padding-left: 0;
+    float: none;
+    margin: 0 0 40px;
+  }
+  .feature h3 {
+    text-align: center;
+    font-size: 20px;;
+  }
+
+  .features li:nth-child(3n + 1) {
+    margin-left: 0;
+    clear: none;
+  }
+  .features li:nth-child(2n + 1) {
+    margin-left: 0;
+    clear: none;
+  }
+
+  .mac-icon {
+    margin-top: -82px;
+  }
+
+  .remarks {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .remark {
+    width: 100%;
+    padding-left: 0;
+    float: none;
+    margin: 0 0 40px;
+  }
+  .remark img {
+    position: static;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  .remark h3 {
+    text-align: center;
+    font-size: 20px;;
+  }
+
+  .remarks li:nth-child(3n + 1) {
+    margin-left: 0;
+    clear: none;
+  }
+  .remarks li:nth-child(2n + 1) {
+    margin-left: 0;
+    clear: none;
+  }
+  .saying {
+    padding: 20px;
+  }
+  .saying h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .saying .title,
+  .saying .content {
+    text-align: center;
+  }
+  .tweet {
+    padding: 30px 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .last-thing {
+    padding: 20px;
+  }
+  .last-thing h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .ios-promotion {
+    margin-top: 60px;
+    top: 0;
+    padding: 20px;
+    min-height: 0;
+  }
+  .ios-promotion h3 {
+    margin: 0;
+    text-align: center;
+    background-position: center top;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+  .app-store {
+    margin: 30px auto 10px;
+  }
+  .iphone-preview {
+    display: none;
+  }
+  .promotion-content {
+    padding-right: 0;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer nav {
+    margin: 0;
+    float: none;
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer nav a,
+  .footer nav .twitter {
+    float: none;
+    display: inline-block;
+  }
+  .copyright {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    float: none;
+  }
+  .modal .modal-wrap {
+    width: 96%;
+  }
+  .l-modal-container {
+    margin-top: 120px;
+  }
+  .modal .description {
+    width: 96% !important;
+  }
+
+  .package-list a {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .buy-now {
+    padding: 30px;
+  }
+  .buy-now h2 {
+    font-size: 28px;
+  }
+  .content-table {
+    position: static;
+    float: none;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/******************************
+ * Payment
+ ******************************/
+.email-form {
+  margin-bottom: 60px;
+}
+
+.email-form h3 {
+  width: 450px;
+  margin: 20px auto 10px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.email-form input[type=text],
+.email-form input[type=email]{
+  display: block;
+  margin: 10px auto;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  width: 450px;
+  font-size: 18px;
+  padding: 4px 10px;
+}
+
+.fastspring {
+  background: #f8f8f8 url('/img/fastspring.png') center center no-repeat;
+  background-size: 143px 35px;
+  width: 200px;
+  height: 80px;
+  float: left;
+  cursor: pointer;
+}
+
+.alipay {
+  background: #00aaef url('/img/alipay.jpg') center center no-repeat;
+  background-size: 71px 61px;
+  width: 200px;
+  height: 80px;
+  float: right;
+  cursor: pointer;
+}
+
+.payment-methods {
+  margin: 0 auto;
+  width: 450px;
+  overflow: hidden;
+}
+
+.payment-methods div:hover {
+  opacity: 0.9;
+}
+
+.input-name {
+  position: relative;
+  margin: 0 auto;
+  width: 450px;
+  height: 100px;
+}
+
+.first-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.last-name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
+.email-form .input-name input[type=text] {
+  width: 200px;
+  float: none;
+}
+
+.email-hint {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0 auto 20px;
+  width: 450px;
+}
+
+.email-form label {
+  display: block;
+  margin: 10px auto;
+  width: 450px;
+}
+
+.email-form label input {
+  margin-right: 5px;
+}
+
+.continue-button {
+  display: block;
+  margin: 40px auto;
+  cursor: pointer;
+  border-radius: 6px;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  width: 160px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  background: #34a86a;
+  box-shadow: 0px 2px 8px 0px rgba(7,113,57,0.2);
+  transition: all 0.2s;
+  border: 0;
+  padding: 0;
+}
+
+.continue-button:hover {
+  box-shadow: 0px 2px 8px 0px rgba(7,113,57,0.4);
+  opacity: 1;
+}
+
+.continue-button:active {
+  background-color: #439f6e;
+  transform: translateY(2px);
+}
+
+.continue-button:disabled {
+  opacity: 0.9;
+  text-indent: -1000px;
+  overflow: hidden;
+  background: #34a86a url('../img/loading.gif') center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.purchase-successful {
+}
+
+.purchase-successful .success {
+  background: transparent url('../img/ok.png') left top no-repeat;
+  background-size: 160px 160px;
+  margin: 0 auto 20px;
+  width: 750px;
+  padding-left: 200px;
+  min-height: 300px;
+}
+
+.purchase-successful .hint {
+  font-size: 12px;
+  color: #aaa;
+}

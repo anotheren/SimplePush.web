@@ -235,31 +235,15 @@ a:hover {
 
 
 .feature-performance {
-  background-image: url('../img/icon-performance.png');
+  background-image: url('../img/icon-speed.png');
 }
 
 .feature-rule {
-  background-image: url('../img/icon-rule.png');
+  background-image: url('../img/icon-4k.png');
 }
 
 .feature-ios {
-  background-image: url('../img/icon-ios.png');
-  background-size: 25px 38px;
-}
-
-.feature-decrypt {
-  background-image: url('../img/icon-decrypt.png');
-  background-size: 27px 40px;
-}
-
-.feature-dns {
-  background-image: url('../img/icon-dns.png');
-  background-size: 32px 31px;
-}
-
-.feature-group {
-  background-image: url('../img/icon-group.png');
-  background-size: 31px 31px;
+  background-image: url('../img/icon-beauty.png');
 }
 
 .features h3 {

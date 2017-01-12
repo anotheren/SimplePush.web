@@ -12,4 +12,4 @@ SimplePush-iOS is built with the following open-source libraries, ordered by use
 
 And all these libraries are managed by Carthage ([Github](https://github.com/Carthage/Carthage)) ([License](https://github.com/Carthage/Carthage/blob/master/LICENSE.md))
 
-© 2017 anotheren.com
+© anotheren.com, 2017

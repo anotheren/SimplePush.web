@@ -129,7 +129,6 @@ a:hover {
  * Preview
  ******************************/
 .preview {
-  margin-top: 128px;
   background: transparent url('../img/bg-curve.png') center bottom no-repeat;
   background-size: 1440px 271px;
   min-height: 271px;

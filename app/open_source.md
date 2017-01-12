@@ -10,4 +10,4 @@ SimplePush-iOS is built with the following open-source libraries, ordered by use
 * Reachability.swift ([Github](https://github.com/ashleymills/Reachability.swift)) ([License](https://github.com/ashleymills/Reachability.swift/blob/master/LICENSE))
 * TrafficPolice ([Github](https://github.com/anotheren/TrafficPolice)) ([License](https://github.com/anotheren/TrafficPolice/blob/master/LICENSE))
 
-© anotheren.com 2017
+© 2017 anotheren.com

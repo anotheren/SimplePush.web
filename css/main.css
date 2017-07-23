@@ -238,12 +238,15 @@ a:hover {
   background-image: url('../img/icon-speed.png');
 }
 
-.feature-rule {
-  background-image: url('../img/icon-4k.png');
+.feature-speech {
+  background-image: url('../img/icon-speechrec.png');
 }
 
 .feature-ios {
   background-image: url('../img/icon-beauty.png');
+}
+.feature-new {
+  background-image: url('../img/icon-new.png');
 }
 
 .features h3 {
